@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>??</h1>
+  </body>
+</html>
+<body class="light-theme"></body>
+  <script src="app.js"></script>
+
+  <html>
+<head>
+
+<title>
+</title>    
+
+<script>        
+function static_num() 
+{            
+    document.getElementById("btnOperate").onclick = function () {                
+        var arr = new Array();                
+        var items = document.getElementsByName("category");                 
+        for (i = 0; i < items.length; i++) {                    
+            if (items[i].checked) {                        
+                arr.push(items[i].value);                    
+            }                
+        }                 
+        alert("確認勾選框：" + arr.length);            
+    };        
+};    
+</script>
+</head>
+<body>    
+
+    <html>
+      <head>
+      <title>javascript同一頁面傳值</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=big5">
+      </head>
+      <script language="JavaScript">
+      function ok() <!--算找零和傳值-->
+      {
+      var x = parseInt(document.getElementById("x").value);
+      var y = parseInt(document.getElementById("y").value);
+      
+      z=x-y;
+      document.form2.money.value=z;
+      
+      }
+
+      </script>
+      <body>
+        
+        <form name="form1" method="post" action="">
+          <button type="button" onclick = "ok()" >確認</button>
+
+        </form>
+
+      <form name="form2" method="post" action="">
+        
+        <marquee direction = right scrollamount = 10><img src="走.png" width="40" height="50"></marquee>
+        <body>
+           
+          
+          </body>
+          </html>
+
+      </form> 
+      
+
+      <div id=demo style=overflow:hidden;height:33;width:500;background:#214984;color:#ffffff>
+        <table align=left cellpadding=0 cellspace=0 border=0>
+        <tr>
+        <td id=demo1 valign=top><img src="走.png"><img src="images/logo/flashempire.gif"><img src="images/logo.gif"><img src="images/logo/5dmedia.gif"><img src="images/logo/macromedia.gif"><img src="images/logo/sucaiw.gif"><img src="images/logo/blueieda.gif"><img src="images/logo/htmlcn.gif"><img src="images/logo/fwcn.gif">
+        </td>
+        <td id=demo2 valign=top></td>
+        </tr>
+        </table>
+        </div>
+        
+        <script>
+        var speed=30
+        demo2.innerHTML=demo1.innerHTML
+        function Marquee(){
+        if(demo2.offsetWidth-demo.scrollLeft<=0)
+        demo.scrollLeft-=demo1.offsetWidth
+        else{
+        demo.scrollLeft++
+        }
+        }
+        var MyMar=setInterval(Marquee,speed)
+        demo.onmouseover=function() {clearInterval(MyMar)}
+        demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        </script>

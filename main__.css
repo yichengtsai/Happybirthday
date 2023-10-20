@@ -1,0 +1,69 @@
+li {
+    list-style: square;/*設定字體前方的形狀*/
+  }
+  
+  .list {
+    list-style: square;/*設定字體前方的形狀*/
+  }
+  .light-theme {
+    color: #000000;/*修改字體顏色*/
+    background: #f2f3abe7;/*修改背景顏色*/
+  }
+  :root {/*定義顏色常數*/
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #1428be;
+  }
+  .btn {/*更改按鈕的大小、形狀、外觀與位置*/
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .light-theme {
+    --bg: var(--black);
+    --fontColor: var(--black);
+    --btnBg: var(--black);/*調整按鈕框的顏色*/
+    --btnFontColor: var(--white);/*調整字體顏色*/
+  }
+  
+  .dark-theme {
+    --bg: var(--blue);
+    --fontColor: var(--blue);
+    --btnBg: var(--blue);/*調整按鈕框的顏色*/
+    --btnFontColor: var(--white);/*調整字體顏色*/
+  }
+  .item-box .item-list input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    border:1px solid #999;
+    border-radius:3px;
+    
+    -webkit-appearance:none; /*取消預設外觀*/
+    background-color: #fff;
+  
+    position: relative; 
+  }
+  .item-box .item-list input[type='checkbox']:checked {
+    border:1px solid #15aabf;
+    background-color: #15aabf;
+  }
+  .item-box .item-list input[type='checkbox']:checked:after{
+    content:" ✓";
+    font-size: 20px;
+    font-weight: 900;
+    color:#fff;
+    line-height: 20px;
+    position: absolute;
+  }
+
+
+
+
+
